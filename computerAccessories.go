@@ -1,5 +1,12 @@
 package main
 
-//Declare Computer Accessoies Struct
+import "fmt"
 
-//Create print method
+type computerAccessories struct {
+	item  string
+	price float32
+}
+
+func (c *computerAccessories) print() {
+	fmt.Println(c.item, c.price)
+}

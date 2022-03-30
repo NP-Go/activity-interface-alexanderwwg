@@ -1,5 +1,12 @@
 package main
 
-//Declare Games Struct
+import "fmt"
 
-//Create print method
+type game struct {
+	title string
+	price float32
+}
+
+func (g *game) print() {
+	fmt.Println(g.title, g.price)
+}
